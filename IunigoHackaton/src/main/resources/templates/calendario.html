@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Iunigo - Form </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <head>
+        <div class="container main text-center  ">
+            <div class="row  mb-3  ">
+                <div class="col-4">
+                    <img src="img/menu.png" alt="" class="barra">
+                </div>
+                <div class="col-4">
+                    <img src="https://res.cloudinary.com/iunigo/image/upload/v1553707618/logos/logo-iunigo.svg"
+                        alt="Logo iúnigo" class="logo">
+                </div>
+                <div class="col-4">
+<a href="/modificarCalendario" class="btn btn-lg" >Editar</a>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="container">
+
+                <div class="buttonscontainer">
+                    <div class="contentcontainer">
+                        <div class="title">Registro</div>
+                        <div class="info">Vencimiento:<a th:text="${registro}">07/2006</a></div>
+                    </div>
+                    <div class="contentcontainer">
+                        <div class="title">VTV</div>
+                        <div class="info">Vencimiento:<a th:text="${vtv}">07/2006</a></div>
+                    </div>
+                    <div class="contentcontainer">
+                        <div class="title">Seguro</div>
+                        <div class="info">Vencimiento:<a th:text="${seguro}">07/2006</a></div>
+                    </div>
+                    <div class="contentcontainer">
+                        <div class="title">Patente</div>
+                        <div class="info">Vencimiento:<a th:text="${patente}">07/2006</a></div>
+                    </div>
+                </div>
+                <div class="agregareventos"> Agregar eventos
+                    <div class="iconeventos"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="calendariodesplegable">
+                    <i class="far fa-calendar-alt"></i>
+                </div>
+            </div>
+
+
+        </div>
+    </head>
+    <footer class="container  a-active">
+        <div class="row text-center">
+            <div class="col-6 button-P  a-inactive">
+                <a href="/home">
+                    <h6>
+                        Home
+                    </h6>
+                </a>
+            </div>
+            <div class="col-6 button-H a-active">
+                <h6>
+                    <a href="/perfil">
+                        Mi perfil
+                    </a>
+
+                </h6>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

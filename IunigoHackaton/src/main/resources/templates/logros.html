@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Iunigo - Logros </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container main text-center  ">
+            <div class="row  mb-3  ">
+                <div class="col-4">
+                    <img src="menu.png" alt="" class="barra">
+                </div>
+                <div class="col-4">
+                    <img src="https://res.cloudinary.com/iunigo/image/upload/v1553707618/logos/logo-iunigo.svg"
+                        alt="Logo iúnigo" class="logo">
+                </div>
+                <div class="col-4">
+                    <img style="height: 30x; width: 30px;" src="notificacion.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="middle">
+        <h5 class="mt-5"> Tus Logros</h5>
+        <div class="carta-container">
+
+            <div class="carta ancho2">
+            <h6 class="card-title" th:text="${nombreL1P1}"> 1 mes sin multas</h6>
+                <img th:src="${imagenL1P1}" class="card-img-top tamano" alt="...">
+                <h6 class="card-title" th:text="${beneficioL1P1}"> 1 mes sin multas</h6>
+            </div>
+
+            <div class="carta ancho2">
+            <h6 class="card-title" th:text="${nombreL2P1}"> 1 mes sin multas</h6>
+                <img th:src="${imagenL2P1}" class="card-img-top tamano" alt="...">
+                <h6 class="card-title" th:text="${beneficioL2P1}"> Pago a tiempo </h6>
+            </div>
+
+            <div class="carta ancho2">
+            <h6 class="card-title" th:text="${nombreL3P1}"> 1 mes sin multas</h6>
+                <img th:src="${imagenL3P1}" class="card-img-top tamano" alt="...">
+                <h6 class="card-title" th:text="${beneficioL3P1}"> 1 mes accidentes</h6>
+            </div>
+
+
+
+        </div>
+        <h5> Logros a cumplir</h5>
+        <p> Obtenga más beneficios</p>
+        <div class="carta-container">
+
+ 
+            <div class="carta ancho2">
+            <h6 class="card-title" th:text="${nombreL4P1}"> 1 mes sin multas</h6>
+                <img th:src="${imagenL4P1}" class="card-img-top tamano" alt="...">
+                <h6 class="card-title" th:text="${beneficioL4P1}"> 3 meses pagando en termino</h6>
+            </div>
+
+            <div class="carta ancho2">
+            <h6 class="card-title" th:text="${nombreL1P1}"> 1 mes sin multas</h6>
+                <img th:src="${imagenL1P1}" class="card-img-top tamano" alt="...">
+                <h6 class="card-title" th:text="${beneficioL1P1}"> Master de la calle  </h6>
+            </div>
+
+            <div class="carta ancho2">
+            <h6 class="card-title" th:text="${nombreL2P1}"> 1 mes sin multas</h6>
+                <img th:src="${imagenL2P1}" class="card-img-top tamano" alt="...">
+                <h6 class="card-title" th:text="${beneficioL2P1}"> Usaste tu primer descuento </h6>
+            </div>
+        </div>
+    </div>
+    <footer class="container  a-active">
+            <div class="row text-center">
+                <div class="col-6 button-P  a-inactive">
+                    <a href="/home">
+                        <h6>
+                            Home
+                        </h6>
+                    </a>
+                </div>
+                <div class="col-6 button-H a-active">
+                    <h6>
+                        <a href="/perfil">
+                            Mi perfil
+                        </a>
+    
+                    </h6>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+</html>
