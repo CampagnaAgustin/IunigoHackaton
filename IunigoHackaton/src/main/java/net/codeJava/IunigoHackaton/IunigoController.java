@@ -65,7 +65,6 @@ public class IunigoController {
 		String nombreLogro1 = logro1prueba1.getNombre();
 		String imagenLogro1 = logro1prueba1.getImagen();
 		String beneficioLogro1 = logro1prueba1.getBeneficio();
-		boolean earnedLogro1 = logro1prueba1.isEarned();
 		Logro logro2prueba1 = Usuario.prueba1.getLogro2();
 		String nombreLogro2 = logro2prueba1.getNombre();
 		String imagenLogro2 = logro2prueba1.getImagen();
@@ -154,7 +153,6 @@ public class IunigoController {
 		String nombreLogro1 = logro1prueba2.getNombre();
 		String imagenLogro1 = logro1prueba2.getImagen();
 		String beneficioLogro1 = logro1prueba2.getBeneficio();
-		boolean earnedLogro1 = logro1prueba2.isEarned();
 		Logro logro2prueba2 = Usuario.prueba2.getLogro2();
 		String nombreLogro2 = logro2prueba2.getNombre();
 		String imagenLogro2 = logro2prueba2.getImagen();
